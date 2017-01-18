@@ -4,12 +4,12 @@ common.min.js 封装了前端建站的常用接口，此文档仅适用于**移�
 ## 文档介绍 ##
 common.min.js 封装的功能包括：
 
-1. loading方法
+1. loading方法；
 2. 分享代码；
 3. 常用UA检测；
 3. 监测代码（不需要自己区分汽车或非汽车项目）；
-4. 手机横屏时，给用户提示请竖屏浏览;
-5. 移动端页面在PC打开，只显示专题二维码，用户需手机扫码看； 
+4. 手机横屏时，提示用户请竖屏浏览;
+5. 移动端页面在PC打开时，只显示专题二维码，用户需手机扫码看； 
 7. 获取链接中指定的参数。
 
 ## 文档使用说明 ##
@@ -45,7 +45,7 @@ common.min.js 封装的功能包括：
 	    	</section>
 		</div>
 	
-2. 加载css文件：loading.css和common.min.js
+2. 加载css文件和js文件：loading.css和common.min.js
 
     	<!DOCTYPE html>
     	<html>
@@ -60,7 +60,7 @@ common.min.js 封装的功能包括：
     		</body>
     	</html>
 
-3. 在`<script>`标签或 js文件中添加接口
+3. 添加如下代码
 
     	<script>
 			var imgArr=[
@@ -99,8 +99,8 @@ common.min.js 封装的功能包括：
 ----------
 
 
-### 常用UA检测 ###
-引用common.min.js，添加如下代码
+### UA检测 使用说明 ###
+引用common.min.js，添加如下所需代码
 
 	<script>
     	netease.ua.mobile //是否为移动终端
@@ -116,13 +116,13 @@ common.min.js 封装的功能包括：
 
 ----------
 
-### 监测代码 ###
+### 监测代码 使用说明 ###
 引用common.min.js即可，无需添加其他代码，**不区分汽车和常规专题**
 
 ----------
 
-### 手机横屏时，给用户提示请竖屏浏览 ###
-引用common.min.js，此功能默认，如需更改，添加如下代码
+### 手机横屏时，提示用户请竖屏浏览 ###
+引用common.min.js，此功能为默认功能，如需更改，添加如下代码
 	
 	//默认，无需添加
     window.landscape_tip = false;
@@ -133,14 +133,14 @@ common.min.js 封装的功能包括：
 ----------
 
 ### 移动端页面在PC打开，只显示专题二维码 ###
-引用common.min.js，此功能默认，如需更改，添加如下代码
+引用common.min.js，此功能为默认功能，如需更改，添加如下代码
 
     //如需屏蔽掉pc二维码, 自己在页面加如下代码
     if(document.getElementById("pc_code")){document.getElementById("pc_code").style.display = 'none';}
 
 ----------
 
-### 获取链接参数 ###
+### 获取链接参数 使用说明 ###
 引用common.min.js，添加如下代码
 
     <script>
