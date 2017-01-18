@@ -1,5 +1,5 @@
 # 前端公用文档 #
-common.min.js 封装了前端项目常用方法，此文档仅适用于**移动端**页面。
+`http://test.go.163.com/go/2015/public/common/js/common.min.js` 封装了前端项目常用方法，此文档仅适用于**移动端**页面。
 
 ## 文档介绍 ##
 common.min.js 封装的功能包括：
