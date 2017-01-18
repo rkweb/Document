@@ -1,5 +1,5 @@
 # 前端公用文档 #
-common.min.js 封装了前端建站的常用接口，此文档仅适用于**移动端**页面。
+common.min.js 封装了前端项目常用方法，此文档仅适用于**移动端**页面。
 
 ## 文档介绍 ##
 common.min.js 封装的功能包括：
@@ -13,9 +13,9 @@ common.min.js 封装的功能包括：
 7. 获取链接中指定的参数。
 
 ## 文档使用说明 ##
-对外提供了*netease*对象，下面有几个可以使用的公用方法
+对外提供了**netease**对象，下面有几个可以使用的公用方法
 
-**首先引用common.min.js，引入到紧挨`</body>`标签处，如下**
+**首先引用common.min.js，引入到`<body></body>`标签内，作为第一个引入的js文件，如下**
 
 	<!DOCTYPE html>
     <html>
@@ -55,8 +55,8 @@ common.min.js 封装的功能包括：
     		</head>
     		<body>
     		...
-    		<script src="http://img2.126.net/ntesrich/ad/zepto.min.js"></script> <!--引用zepto或jquery-->
 			<script src="http://test.go.163.com/go/2015/public/common/js/common.min.js"></script>
+    		<script src="http://img2.126.net/ntesrich/ad/zepto.min.js"></script> <!--引用zepto或jquery-->
     		</body>
     	</html>
 
@@ -74,7 +74,7 @@ common.min.js 封装的功能包括：
 ----------
 
 ### 分享 接口使用说明 ###
-引用common.min.js，添加如下代码
+添加如下代码
 
 	<script>
         var shareData={
@@ -100,7 +100,7 @@ common.min.js 封装的功能包括：
 
 
 ### UA检测 使用说明 ###
-引用common.min.js，添加如下所需代码
+添加如下所需代码
 
 	<script>
     	netease.ua.mobile //是否为移动终端
@@ -122,10 +122,7 @@ common.min.js 封装的功能包括：
 ----------
 
 ### 手机横屏时，提示用户请竖屏浏览 ###
-引用common.min.js，此功能为默认功能，如需更改，添加如下代码
-	
-	//默认，无需添加
-    window.landscape_tip = false;
+此功能为默认功能，如需更改，添加如下代码
 
     //如需屏蔽掉手机横屏 自己页面声明变量
     //window.landscape_tip = false;
@@ -133,7 +130,7 @@ common.min.js 封装的功能包括：
 ----------
 
 ### 移动端页面在PC打开，只显示专题二维码 ###
-引用common.min.js，此功能为默认功能，如需更改，添加如下代码
+此功能为默认功能，如需更改，添加如下代码
 
     //如需屏蔽掉pc二维码, 自己在页面加如下代码
     if(document.getElementById("pc_code")){document.getElementById("pc_code").style.display = 'none';}
@@ -141,7 +138,7 @@ common.min.js 封装的功能包括：
 ----------
 
 ### 获取链接参数 使用说明 ###
-引用common.min.js，添加如下代码
+添加如下代码
 
     <script>
     	netease.getPara("传入参数name");
